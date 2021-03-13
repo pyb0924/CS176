@@ -1,0 +1,135 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+header {
+    padding: 5px;
+    font-size: 14px;
+    background: black;
+    align-items: center;
+    color: gainsboro;
+}
+
+header > span {
+  padding: 0 10px; 
+}
+
+#download_app {
+    border-right: 1px solid #3a3a3a;
+}
+
+
+main {
+    padding-left: 100px;
+    padding-right: 100px;
+    display: flex;
+}
+
+main > div {
+    margin: 10px;
+}
+
+.left {
+    width: 100px;
+}
+
+
+.left p{
+    text-align: center;
+    list-style-type: none;
+}
+
+#recommend {
+    padding: 5px;
+    color: white;
+    background: red;
+    border: solid red;
+    border-radius: 5px;
+}
+
+.center {
+    width: 800px;
+}
+
+#alert_bar {
+    font-size: 12px;
+    line-height: 25px;
+    font-weight: lighter;
+    color: white;
+    text-align: center;
+    background: #99bbff;
+}
+
+.right {
+    width: 400px;
+}
+
+#search_box{
+    margin-bottom: 10px;
+}
+
+
+#search_input {
+    width: 204px;
+    font-size: 14px;
+    height: 35px;
+    padding: 3px 10px;
+    color: #1f2d3d;
+    background-color: #f5f6f7;
+    border: 1px solid #e8e8e8;
+    border-radius: 4px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+#search_button {
+    width: 70px;
+    font-size: 14px;
+    font-weight: lighter;
+    height: 42px;
+    background: #208eda;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border: none;
+    color: white;
+}
+
+#login_box {
+    text-align: center;
+    background-color: white;
+    border: 20px solid #f1f1f1;
+    padding: 10px;
+}
+
+#login_text {
+    font-weight: lighter;
+    font-size: 14px;
+}
+
+#login_button {
+    font-size: 14px;
+    line-height: 40px;
+    color: white;
+    font-weight: lighter;
+    margin: 10px;
+    border-radius: 5px;
+    background: red;
+}
+
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+
+#login_list > li {
+    display: inline-block;
+    position: relative;
+    width: 36px;
+
+}
+
+
