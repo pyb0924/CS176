@@ -29,6 +29,7 @@ main > div {
 }
 
 .left {
+    
     width: 100px;
 }
 
@@ -60,7 +61,7 @@ main > div {
 }
 
 .right {
-    width: 400px;
+    width: 510px;
 }
 
 #search_box{
@@ -69,7 +70,7 @@ main > div {
 
 
 #search_input {
-    width: 204px;
+    width: 250px;
     font-size: 14px;
     height: 35px;
     padding: 3px 10px;
@@ -117,19 +118,80 @@ main > div {
 
 ul {
     display: block;
-    list-style-type: disc;
+    list-style-type: none;
     margin-block-start: 1em;
     margin-block-end: 1em;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
-    padding-inline-start: 40px;
+    padding-left: 0px;
 }
+
+.login_icon {
+    margin-top: 10px;
+    height: 24px;
+    width: 24px;
+}
+
 
 #login_list > li {
     display: inline-block;
-    position: relative;
     width: 36px;
+}
 
+.link_list {
+    display: block;
+    overflow: hidden;
+    margin-right: -20px;
+
+    flex-direction: row;
+    justify-content: center;
+}
+
+.link_list >li {
+    float: left;
+    color: grey;
+    margin: 0 20px 20px 0;
+}
+
+.link_box {
+    color: gray;
+    line-height: 2em;
+    margin-top: 17px;
+    padding-right: 17px;
+    padding-left: 17px;
+    background-color: #f4f5f6;
+    border-top: solid red;
+}
+
+.main_item > img {
+    float: left;
+}
+
+.main_item {
+    padding-bottom: 5px;
+    border-bottom: solid 1px gainsboro;
 }
 
 
+.news_icon {
+    height: 15px;
+}
+
+.main_bottom {
+    margin: 20px;
+}
+
+.main_img{
+    margin-right: 10px;
+    height: 80px;
+}
+
+.main_header {
+    margin: 25px;
+}
+
+.area {
+    color: burlywood;
+    padding: 2px;
+    border: 2px solid burlywood;
+}
