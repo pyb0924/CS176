@@ -9,8 +9,16 @@ header {
     color: gainsboro;
 }
 
-header > span {
-  padding: 0 10px; 
+header >a {
+    padding: 5px;
+}
+
+.weather {
+    display: inline-block;
+}
+
+.header_right {
+    float: right;
 }
 
 #download_app {
@@ -19,8 +27,8 @@ header > span {
 
 
 main {
-    padding-left: 100px;
-    padding-right: 100px;
+    padding-left: 50px;
+    padding-right: 50px;
     display: flex;
 }
 
@@ -32,7 +40,6 @@ main > div {
     
     width: 100px;
 }
-
 
 .left p{
     text-align: center;
@@ -48,7 +55,7 @@ main > div {
 }
 
 .center {
-    width: 800px;
+    width: 1000px;
 }
 
 #alert_bar {
@@ -70,7 +77,7 @@ main > div {
 
 
 #search_input {
-    width: 250px;
+    width: 242px;
     font-size: 14px;
     height: 35px;
     padding: 3px 10px;
@@ -161,6 +168,10 @@ ul {
     padding-left: 17px;
     background-color: #f4f5f6;
     border-top: solid red;
+}
+
+.link_box > h3 {
+    color: black;
 }
 
 .main_item > img {
