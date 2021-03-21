@@ -1,4 +1,5 @@
 /.vscode
 .DS_Store
 /test
-/.idea
+*/.idea
+/node_modules
