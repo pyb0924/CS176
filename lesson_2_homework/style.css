@@ -9,7 +9,7 @@ header {
     color: gainsboro;
 }
 
-header >a {
+header > a {
     padding: 5px;
 }
 
@@ -25,7 +25,6 @@ header >a {
     border-right: 1px solid #3a3a3a;
 }
 
-
 main {
     padding-left: 50px;
     padding-right: 50px;
@@ -37,11 +36,10 @@ main > div {
 }
 
 .left {
-    
     width: 100px;
 }
 
-.left p{
+.left p {
     text-align: center;
     list-style-type: none;
 }
@@ -71,10 +69,9 @@ main > div {
     width: 510px;
 }
 
-#search_box{
+#search_box {
     margin-bottom: 10px;
 }
-
 
 #search_input {
     width: 242px;
@@ -139,7 +136,6 @@ ul {
     width: 24px;
 }
 
-
 #login_list > li {
     display: inline-block;
     width: 36px;
@@ -154,7 +150,7 @@ ul {
     justify-content: center;
 }
 
-.link_list >li {
+.link_list > li {
     float: left;
     color: grey;
     margin: 0 20px 20px 0;
@@ -183,7 +179,6 @@ ul {
     border-bottom: solid 1px gainsboro;
 }
 
-
 .news_icon {
     height: 15px;
 }
@@ -192,7 +187,7 @@ ul {
     margin: 20px;
 }
 
-.main_img{
+.main_img {
     margin-right: 10px;
     height: 80px;
 }
