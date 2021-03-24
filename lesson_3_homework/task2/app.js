@@ -15,14 +15,13 @@ function createItem(name) {
     const task = document.createElement("li");
 
     const del_btn = document.createElement("button");
-    del_btn.type="submit"
+    del_btn.type="button"
     del_btn.innerHTML = "<img src='del.png' alt='del' width='20px'>"
     //del_btn.appendChild(btn_img);
     task.appendChild(del_btn);
 
-    del_btn.onclick = function () {
+    del_btn.onclick = function (event) {
         task.parentNode.removeChild(task);
-        return false;
     };
 
     const done_box = document.createElement("input");
@@ -44,7 +43,7 @@ function createItem(name) {
 }
 
 const submit_btn = document.querySelector(".input_form > button");
-submit_btn.onclick = function () {
+submit_btn.onclick = function (event) {
     const input = document.querySelector(".input_form > input");
     const task_name = input.value;
     input.value="";
@@ -53,7 +52,7 @@ submit_btn.onclick = function () {
     ++count;
     console.log(count.toString());
     checkBoard();
-    return false;
+    event.preventDefault();
 };
 
 const clear_link = document.getElementById("clear");
