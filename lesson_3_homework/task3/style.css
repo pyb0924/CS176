@@ -1,0 +1,203 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+header {
+    padding: 5px;
+    font-size: 14px;
+    background: black;
+    align-items: center;
+    color: gainsboro;
+}
+
+header > a {
+    padding: 5px;
+}
+
+.weather {
+    display: inline-block;
+}
+
+.header_right {
+    float: right;
+}
+
+#download_app {
+    border-right: 1px solid #3a3a3a;
+}
+
+main {
+    padding-left: 50px;
+    padding-right: 50px;
+    display: flex;
+}
+
+main > div {
+    margin: 10px;
+}
+
+.left {
+    width: 100px;
+}
+
+.left p {
+    text-align: center;
+    list-style-type: none;
+}
+
+#recommend {
+    padding: 5px;
+    color: white;
+    background: red;
+    border: solid red;
+    border-radius: 5px;
+}
+
+.center {
+    width: 1000px;
+}
+
+#alert_bar {
+    font-size: 12px;
+    line-height: 25px;
+    font-weight: lighter;
+    color: white;
+    text-align: center;
+    background: #99bbff;
+}
+
+.right {
+    width: 510px;
+}
+
+#search_box {
+    margin-bottom: 10px;
+}
+
+#search_input {
+    width: 242px;
+    font-size: 14px;
+    height: 35px;
+    padding: 3px 10px;
+    color: #1f2d3d;
+    background-color: #f5f6f7;
+    border: 1px solid #e8e8e8;
+    border-radius: 4px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+#search_button {
+    width: 70px;
+    font-size: 14px;
+    font-weight: lighter;
+    height: 42px;
+    background: #208eda;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border: none;
+    color: white;
+}
+
+#login_box {
+    text-align: center;
+    background-color: white;
+    border: 20px solid #f1f1f1;
+    padding: 10px;
+}
+
+#login_text {
+    font-weight: lighter;
+    font-size: 14px;
+}
+
+#login_button {
+    font-size: 14px;
+    line-height: 40px;
+    color: white;
+    font-weight: lighter;
+    margin: 10px;
+    border-radius: 5px;
+    background: red;
+}
+
+ul {
+    display: block;
+    list-style-type: none;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-left: 0px;
+}
+
+.login_icon {
+    margin-top: 10px;
+    height: 24px;
+    width: 24px;
+}
+
+#login_list > li {
+    display: inline-block;
+    width: 36px;
+}
+
+.link_list {
+    display: block;
+    overflow: hidden;
+    margin-right: -20px;
+
+    flex-direction: row;
+    justify-content: center;
+}
+
+.link_list > li {
+    float: left;
+    color: grey;
+    margin: 0 20px 20px 0;
+}
+
+.link_box {
+    color: gray;
+    line-height: 2em;
+    margin-top: 17px;
+    padding-right: 17px;
+    padding-left: 17px;
+    background-color: #f4f5f6;
+    border-top: solid red;
+}
+
+.link_box > h3 {
+    color: black;
+}
+
+.main_item > img {
+    float: left;
+}
+
+.main_item {
+    padding-bottom: 5px;
+    border-bottom: solid 1px gainsboro;
+}
+
+.news_icon {
+    height: 15px;
+}
+
+.main_bottom {
+    margin: 20px;
+}
+
+.main_img {
+    margin-right: 10px;
+    height: 80px;
+}
+
+.main_header {
+    margin: 25px;
+}
+
+.area {
+    color: burlywood;
+    padding: 2px;
+    border: 2px solid burlywood;
+}
