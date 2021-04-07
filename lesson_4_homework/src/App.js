@@ -1,9 +1,8 @@
-import {createRef} from "react"
-import {Carousel} from "antd";
-import {LeftOutlined, RightOutlined} from "@ant-design/icons";
+import React from "react";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import "./styles.css"
-import Item from "./item";
-import Image from "./image";
 
 const images = [
     {id: 1, src: './1.jpeg'},
@@ -12,30 +11,26 @@ const images = [
 ];
 
 function App() {
-    const carousel = createRef();
-
-    const handleNext = () => {
-        carousel.current.next();
-        console.log('next')
-    }
-
-    const handlePrev = () => {
-        carousel.current.prev();
-        console.log('prev')
-    }
+    const sliderStyle = {
+        dots: true,
+        lazyLoad: true,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        initialSlide: 2,
+        autoplay: true,
+        adaptiveHeight: true
+    };
 
     return (
-        <div className="wrapper">
-            <LeftOutlined className="prev-button" onClick={handlePrev}/>
-            <RightOutlined className="next-button" onClick={handleNext}/>
-            <Carousel ref={carousel} lazyLoad="ondemand"
-                      autoplay dots infinite draggable>
+
+        <div className="container">
+            <Slider {...sliderStyle}>
                 {images.map((image) => (
-                    <Item id={image.id} key={image.id}
-                        component={<Image src={image.src}/>}
-                    />
+                    <img className="item" src={image.src} alt={image.id}/>
                 ))}
-            </Carousel>
+            </Slider>
         </div>
 
     );
