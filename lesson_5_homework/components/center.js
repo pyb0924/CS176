@@ -5,23 +5,23 @@ import {useEffect, useState} from "react";
 export default function Center() {
 
     const [state, setState] = useState({
-        data:[{id: 1}, {id: 2}, {id: 3}, {id: 4}, {id: 5}]
+        data:[]
     });
 
-    // useEffect(() => {
-    //     fetch("/api/getNews").then(async (res) => {
-    //         const data = await res.json();
-    //         setState({
-    //             data,
-    //         });
-    //     });
-    // }, []);
+    useEffect(() => {
+        fetch("/api/getNews").then(async (res) => {
+            const data = await res.json();
+            setState({
+                data
+            });
+        });
+    }, []);
 
     return (
         <div className={styles.center}>
             <div className={styles.alert_bar}>您有未读新闻，点击查看</div>
-            {state.data.map((item) => (
-                <News data={item} key={item.id}/>
+            {state.data.map((item,index) => (
+                <News data={item} key={index}/>
             ))}
         </div>
     )

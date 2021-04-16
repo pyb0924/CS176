@@ -1,5 +1,5 @@
 .right {
-    width: 30%;
+    width: 400px;
 }
 
 .search_box {
@@ -59,6 +59,7 @@
 
 .link_list {
     display: block;
+    padding-right: 10px;
     list-style-type: none;
     margin-block-start: 1em;
     margin-block-end: 1em;

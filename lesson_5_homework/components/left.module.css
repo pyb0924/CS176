@@ -2,12 +2,19 @@
     width: 150px;
 }
 
-.left p {
+.navigate {
+    color: gray;
+    margin: 10px;
+    display: block;
     text-align: center;
     list-style-type: none;
 }
 
 .recommend {
+    margin: 10px;
+    display: block;
+    text-align: center;
+    list-style-type: none;
     padding: 5px;
     color: white;
     background: red;

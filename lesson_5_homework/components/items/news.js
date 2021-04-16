@@ -1,24 +1,54 @@
 import styles from "./news.module.css"
 
-export default function News(props){
+
+function commentTransfer(comment){
+    if(comment<10000){
+        return comment.toString()
+    }else {
+        return parseInt(comment/10000)+"万"
+    }
+}
+
+function timeTransfer (time){
+    if(time<3600){
+        return parseInt(time/60)+"分钟前";
+    }else if(time<3600*24){
+        return parseInt(time/3600)+"小时前";
+    }else {
+        return parseInt(time/(3600*24))+"天前"
+    }
+}
+
+export default function News(props) {
+    const curTime=Date.parse(new Date())/1000;
+    const time=curTime-Number(props.data.behot_time);
+    const transferredTime=timeTransfer(time);
+    const transferredComment=commentTransfer(Number(props.data.comments_count));
+
     return (
         <div className={styles.main_item}>
             <img
                 className={styles.main_img}
-                src="images/main.png"
+                src={props.data.middle_image}
                 alt="不重要的新闻图片"
             />
-            <h2 className={styles.main_header}>不重要的新闻标题{props.data.id}</h2>
-            <div>
+
+            <h3 className={styles.main_header}>{props.data.title}</h3>
+            <div className={styles.more_info}>
+
+                {props.data.chinese_tag ? (
+                    <a className={styles.area}>{props.data.chinese_tag}</a>
+                ) : (<></>)}
+
                 <img
                     className={styles.news_icon}
-                    src="images/newsicon.png"
+                    src={props.data.media_avatar_url}
                     alt="icon"
                 />
-                <a className={styles.area}>分区</a>
-                <a className={styles.main_bottom}>xx评论</a>
-                <a>xx小时前</a>
+
+                <span className={styles.main_bottom}>
+                    {props.data.source} · {transferredComment}评论 · {transferredTime}
+                </span>
             </div>
-        </div>
-    )
+        </div>)
 }
