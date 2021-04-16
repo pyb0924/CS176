@@ -1,0 +1,14 @@
+.center {
+    width: 60%;
+}
+
+.alert_bar {
+    font-size: 12px;
+    line-height: 25px;
+    font-weight: lighter;
+    color: white;
+    text-align: center;
+    background: #99bbff;
+}
+
+

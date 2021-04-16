@@ -1,0 +1,16 @@
+.left {
+    width: 150px;
+}
+
+.left p {
+    text-align: center;
+    list-style-type: none;
+}
+
+.recommend {
+    padding: 5px;
+    color: white;
+    background: red;
+    border: solid red;
+    border-radius: 5px;
+}

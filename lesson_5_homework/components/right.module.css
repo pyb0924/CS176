@@ -1,0 +1,97 @@
+.right {
+    width: 30%;
+}
+
+.search_box {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.search_input {
+    width: 75%;
+    font-size: 14px;
+    height: 40px;
+    color: #1f2d3d;
+    background-color: #f5f6f7;
+    border: 1px solid #e8e8e8;
+    border-radius: 4px 0 0 4px;
+}
+
+.search_button {
+    width: 25%;
+    font-size: 14px;
+    font-weight: lighter;
+    height: 40px;
+    background: #208eda;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border: none;
+    color: white;
+}
+
+.login_box {
+    text-align: center;
+    background-color: white;
+    border: 20px solid #f1f1f1;
+    padding: 10px;
+}
+
+.login_text {
+    font-weight: lighter;
+    font-size: 14px;
+}
+
+.login_button {
+    font-size: 14px;
+    line-height: 40px;
+    color: white;
+    font-weight: lighter;
+    margin: 10px;
+    border-radius: 5px;
+    background: red;
+}
+
+.login_icon {
+    margin-top: 10px;
+    height: 36px;
+    width: 36px;
+}
+
+.link_list {
+    display: block;
+    list-style-type: none;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+    padding-left: 10px;
+    overflow: hidden;
+    margin-right: -20px;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.link_list > li {
+    float: left;
+    color: grey;
+    margin: 0 10px 10px 0;
+}
+
+
+.login_link{
+    display: inline-block;
+}
+
+.link_box {
+    padding: 5px;
+    color: gray;
+    line-height: 2em;
+    margin-top: 10px;
+    background-color: #f4f5f6;
+    border-top: solid red;
+}
+
+.link_box > h3 {
+    padding-left: 10px;
+    color: black;
+}

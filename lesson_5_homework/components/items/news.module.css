@@ -1,0 +1,32 @@
+
+.main_item img {
+    float: left;
+}
+
+.main_item {
+    padding-bottom: 5px;
+    border-bottom: solid 1px gainsboro;
+}
+
+.news_icon {
+    height: 15px;
+}
+
+.main_bottom {
+    margin: 20px;
+}
+
+.main_img {
+    margin-right: 10px;
+    height: 80px;
+}
+
+.main_header {
+    margin: 25px 25px 10px;
+}
+
+.area {
+    color: burlywood;
+    padding: 2px;
+    border: 2px solid burlywood;
+}

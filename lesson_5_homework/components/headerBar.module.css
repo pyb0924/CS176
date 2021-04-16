@@ -1,0 +1,24 @@
+.header {
+    padding: 5px;
+    font-size: 14px;
+    background: black;
+    align-items: center;
+    color: gainsboro;
+}
+
+.header a {
+    color: gainsboro;
+    padding: 5px;
+}
+
+.weather {
+    display: inline-block;
+}
+
+.header_right {
+    float: right;
+}
+
+.download_app {
+    border-right: 1px solid #3a3a3a;
+}
