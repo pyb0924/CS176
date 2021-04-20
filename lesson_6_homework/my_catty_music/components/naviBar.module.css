@@ -1,0 +1,14 @@
+.naviBar {
+    display: flex;
+    flex: 0 1 40px;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    background-color: #f2f2f2;
+}
+
+@media screen and (max-width: 64em) {
+    .naviBar {
+        display: none;
+    }
+}

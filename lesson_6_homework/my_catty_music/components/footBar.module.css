@@ -1,0 +1,36 @@
+.footBar {
+    background-color: rgba(61, 100, 158, .9);
+    display: flex;
+    flex: 0 0 90px;
+    align-items: center;
+    padding: 10px;
+    color: white;
+}
+
+
+.footInfo {
+    display: flex;
+    width: 50%;
+    margin-right: auto;
+}
+
+.controlBar {
+    display: flex;
+    width: 50%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footImage {
+    width: 100px;
+    margin-right: 10px;
+}
+
+@media screen and (max-width: 64em) {
+    .controlBar {
+        justify-content: space-around;
+    }
+    .sm-hide {
+        display: none;
+    }
+}

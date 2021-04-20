@@ -1,0 +1,17 @@
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.main {
+  margin-bottom: 10px;
+  display: flex;
+  flex: 1 0 auto;
+}
+
+.content {
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
+}
