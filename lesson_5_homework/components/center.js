@@ -3,7 +3,6 @@ import News from "./items/news";
 import {useEffect, useState} from "react";
 
 export default function Center() {
-
     const [state, setState] = useState({
         data:[]
     });
@@ -20,7 +19,7 @@ export default function Center() {
     return (
         <div className={styles.center}>
             <div className={styles.alert_bar}>您有未读新闻，点击查看</div>
-            {state.data.map((item,index) => (
+            {state.data.map((item, index) => (
                 <News data={item} key={index}/>
             ))}
         </div>
