@@ -1,0 +1,23 @@
+.left {
+    width: 150px;
+}
+
+.navigate {
+    color: gray;
+    margin: 10px;
+    display: block;
+    text-align: center;
+    list-style-type: none;
+}
+
+.recommend {
+    margin: 10px;
+    display: block;
+    text-align: center;
+    list-style-type: none;
+    padding: 5px;
+    color: white;
+    background: red;
+    border: solid red;
+    border-radius: 5px;
+}

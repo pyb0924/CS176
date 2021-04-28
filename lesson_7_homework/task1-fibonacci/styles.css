@@ -1,0 +1,14 @@
+.ani-div {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    animation-name: changeHeight;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes changeHeight {
+    from{height: 100px}
+    to {height: 20px}
+}
