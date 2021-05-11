@@ -1,0 +1,85 @@
+.headerBar {
+    background-color: #ec4141;
+    width: 100%;
+    display: flex;
+    flex: 1 0 auto;
+    flex-direction: row;
+    color: white;
+    align-items: center;
+}
+
+.headerTitle {
+    font-size: larger;
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-right: 20px;
+}
+
+.headerItem {
+    margin-left: 5px;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-right: 5px;
+    color: #f6c5c5;
+    display: flex;
+    align-items: center;
+    height: 50px;
+}
+
+.headerItem:hover {
+    cursor: pointer;
+}
+
+.headerLeft {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+.headerRight {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: auto;
+}
+
+.searchForm {
+    display: flex;
+    height: 30px;
+    align-items: center;
+}
+
+.searchBox {
+    background-color: #bb3737;
+    height: 30px;
+    margin-left: 20px;
+    padding-left: 20px;
+    border:1px solid #bb3737;
+    border-radius: 18px;
+}
+
+.searchBox::placeholder {
+    color: #e29292;
+}
+
+.searchBtn {
+    width: 20px;
+    height: 20px;
+    border: none;
+    outline: none;
+    margin-left: 20px;
+    margin-right: 20px;
+    background: url("/search.svg") no-repeat ;
+}
+
+.creatorBtn {
+    margin-right: 20px;
+    border-radius: 18px;
+    background-color: #e13e3e;
+    padding-left: 5px;
+    padding-right: 5px;
+    color: #f6c5c5;
+    border:1px solid #f6c5c5;
+}

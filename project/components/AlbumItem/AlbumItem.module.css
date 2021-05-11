@@ -1,0 +1,29 @@
+.albumItem {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 60px;
+}
+
+.albumCover {
+    flex: 3 0 auto;
+
+}
+
+.albumInfo {
+    flex: 7 0 auto;
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.albumTitle {
+    font-size: small;
+
+}
+
+.albumSize {
+    margin-top: auto;
+    color: darkgray;
+    font-size: small;
+}
