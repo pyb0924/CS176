@@ -6,12 +6,13 @@
 }
 
 .myAlbumInfo {
-    background-color: blue;
+    background-color: #f6f6f7;
     height: 200px;
     padding-top: 20px;
     padding-left: 20px;
     display: flex;
     flex-direction: row;
+    justify-content: flex-start;
     align-items: flex-start;
 }
 
@@ -22,20 +23,69 @@
 .myAlbumText {
     margin-left: 20px;
     flex: 7 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
 }
 
 .myAlbumTitle {
     font-size: larger;
-
 }
 
 .myAlbumUser {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
     color: #f6f6f7;
     font-size: smaller;
 }
 
-
-
-.mySongList {
-
+.listTitleContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    border-bottom: #bb3737 solid 3px;
 }
+
+.listTitle {
+    padding-left: 15px;
+    margin-top: 20px;
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+.songNum {
+    padding-left: 15px;
+    color: #a9a9aa;
+    font-size: 12px;
+}
+
+.userHeader {
+    width: 30px;
+    height: 30px;
+}
+
+.userName {
+    color: black;
+    padding-left: 10px;
+}
+
+.desc {
+    color: gray;
+    width: 500px;
+}
+
+.header {
+    display: flex;
+    text-align:-webkit-match-parent;
+    border-bottom: #a9a9aa solid 1px;
+}
+
+.header p {
+    color: gray;
+    padding: 10px;
+    margin: 0;
+    flex: 0 0 20%;
+}
+

@@ -1,0 +1,40 @@
+.musicList {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.index {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+.index span{
+    margin-right: 30px;
+}
+.index img{
+    height: 18px;
+    width: 18px;
+}
+
+.musicList li {
+    display: flex;
+    padding: 0 10px;
+    text-align: -webkit-match-parent;
+}
+
+.musicList p {
+    color: #333;
+    font-size: 14px;
+    flex: 0 0 20%;
+}
+
+.musicList div {
+    font-size: 14px;
+    flex: 0 0 20%;
+}
+
+.musicList li:nth-of-type(even){
+    background-color: #f2f2f2;
+}

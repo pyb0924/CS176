@@ -1,1 +1,27 @@
+.container {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.main {
+    background-color: #f6f6f7;
+    margin-left: 10%;
+    margin-right: 10%;
+    flex-grow: 1;
+
+}
+
+.main h2 {
+    margin-left: 20px;
+}
+
+
+.recommendList {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:space-between;
+}
+
 
