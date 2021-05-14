@@ -52,6 +52,7 @@ function Album(props) {
     const [songUrl, setSongUrl] = useState(initSongUrl);
     const [volume, setVolume] = useState(0.5);
     const [progress, setProgress] = useState(0);
+    const [autoPlay,setAutoPlay]=useState(false);
 
 
     useEffect(() => {
@@ -69,12 +70,17 @@ function Album(props) {
         fetchSongInfo()
     }, [songIndex]);
 
+    useEffect(() => {
+        audioMedia.current.volume=volume;
+    }, [volume]);
+
+
 
     const changePlaying = (event) => {
         if (playing) {
             audioMedia.current.pause()
         } else {
-            audioMedia.current.volume=0.5
+            audioMedia.current.volume=volume
             audioMedia.current.play()
         }
         setPlaying(!playing)
@@ -83,25 +89,34 @@ function Album(props) {
 
     const beginPlaying = (index) => {
         return (event) =>{
+            setAutoPlay(true)
             setPlaying(true)
             setSongIndex(index)
-            audioMedia.current.volume=0.5
-            setProgress(0);
-            audioMedia.current.play()
         }
     }
 
-    const changeVolume=(event)=>{
+    const playNext =()=>{
+        const next= songIndex===song_list.length? 0:songIndex+1
+        setAutoPlay(true)
+        setSongIndex(next)
+    }
+
+    const playPrev=()=>{
+        const prev = songIndex===0 ?song_list.length-1:songIndex-1
+        setAutoPlay(true)
+        setSongIndex(prev)
+    }
+
+    const changeMute=(event)=>{
         if(volume>0){
             event.target.src='/mute.svg'
-            audioMedia.current.volume=0;
             setVolume(0);
         }else {
             event.target.src='/volume.svg'
-            audioMedia.current.volume=0.5
             setVolume(0.5)
         }
     }
+
 
     const audioMedia = useRef(null);
 
@@ -115,7 +130,11 @@ function Album(props) {
         setProgress(audioMedia.current.currentTime)
     }
 
-    console.log(initSongUrl)
+    const checkAutoPlay=()=>{
+        if (autoPlay){
+            audioMedia.current.play()
+        }
+    }
 
     return (
         <div className={styles.container}>
@@ -133,8 +152,10 @@ function Album(props) {
                          userName={album_owner} title={album_title} song_list={song_list} beginPlaying={beginPlaying}/>
             </div>
 
-            <BottomBar playing={playing} progress={progress} changePlaying={changePlaying} changeVolume={changeVolume} song={song} coverUrl={cover_url} />
-            <audio ref={audioMedia} src={songUrl} preload='auto' onTimeUpdate={handleTimeUpdate}/>
+            <BottomBar playing={playing} progress={progress} changePlaying={changePlaying} changeMute={changeMute}
+                       song={song} coverUrl={cover_url} onNext={playNext} onPrev={playPrev} />
+            <audio ref={audioMedia} src={songUrl} preload='auto' onTimeUpdate={handleTimeUpdate} onEnded={playNext}
+                   onCanPlay={checkAutoPlay}/>
         </div>
     );
 }

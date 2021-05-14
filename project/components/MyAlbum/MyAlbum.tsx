@@ -35,6 +35,7 @@ function MyAlbum(props: MyAlbumProps) {
             </div>
             <div>
                 <div className={styles.header}>
+                    <p> </p>
                     <p>歌曲标题</p>
                     <p>时长</p>
                     <p>歌手</p>

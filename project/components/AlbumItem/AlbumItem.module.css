@@ -1,8 +1,14 @@
 .albumItem {
+    width: 100%;
     display: flex;
     flex-direction: row;
     align-items: center;
     height: 60px;
+    border-bottom: gray solid 1px;
+}
+
+.albumItem:hover{
+    cursor: pointer;
 }
 
 .albumCover {
@@ -15,10 +21,14 @@
     margin-left: 10px;
     display: flex;
     flex-direction: column;
+    text-overflow: ellipsis;
+    overflow: hidden;
 }
 
 .albumTitle {
     font-size: small;
+    text-overflow: ellipsis;
+    overflow: hidden;
 
 }
 

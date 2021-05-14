@@ -13,11 +13,6 @@ interface recommendItemProps {
 function RecommendItem(props:recommendItemProps) {
     const {album_id,cover,listen_num,title}=props
 
-    const onclickHandler=()=>{
-        // TODO get songs
-        console.log(album_id);
-    }
-
     return (
         <div className={styles.recommendItem}>
             <Link href={`/album/${album_id}`}>

@@ -1,0 +1,59 @@
+{
+  "code": 0,
+  "subcode": 0,
+  "msg": "",
+  "data": {
+    "totaldiss": 3,
+    "has_more": 0,
+    "cdlist": [
+      {
+        "dissid": 6896841333,
+        "dissname": "日向坂46【1~4th、2个专辑】",
+        "songnum": 66,
+        "listennum": 44106,
+        "logo": "http://qpic.y.qq.com/music_cover/2Ffn67YLzSyBq8O1dZkiaSWDN2QBib7Jobv5ic0ogR3gKtJOXMnCbkMag/300?n=1",
+        "dirid": 1,
+        "dirtype": 2,
+        "isshow": 1,
+        "dir_show": 1,
+        "uin": 793532773,
+        "encrypt_uin": "7iEi7KoA7iSi",
+        "nickname": "Chibayoyu",
+        "createtime": 1553619491,
+        "type": 10014
+      },
+      {
+        "dissid": 3704921285,
+        "dissname": "天使张韶涵：受过的伤开出美丽的花",
+        "songnum": 34,
+        "listennum": 4904826,
+        "logo": "http://qpic.y.qq.com/music_cover/1HFn1Rm4ztLiaPmN5cz0jGyhxYdTJEEr4ToWhm49icdLmPazZL5iaPMzg/300?n=1",
+        "dirid": 60,
+        "dirtype": 2,
+        "isshow": 1,
+        "dir_show": 1,
+        "uin": 1776206658,
+        "encrypt_uin": "oKSl7w-z7wCkNn**",
+        "nickname": "陈小苏",
+        "createtime": 1517452900,
+        "type": 10014
+      },
+      {
+        "dissid": 1778876039,
+        "dissname": "「乃木坂46」当遇见变成了幸福",
+        "songnum": 229,
+        "listennum": 2296166,
+        "logo": "http://qpic.y.qq.com/music_cover/2Ffn67YLzSyBq8O1dZkiaSUQ5BPdBTCuE0QjLQwp4icETDrYL0ictDY8A/300?n=1",
+        "dirid": 28,
+        "dirtype": 2,
+        "isshow": 1,
+        "dir_show": 1,
+        "uin": 793532773,
+        "encrypt_uin": "7iEi7KoA7iSi",
+        "nickname": "Chibayoyu",
+        "createtime": 1505011406,
+        "type": 10014
+      }
+    ]
+  }
+}
