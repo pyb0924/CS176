@@ -13,7 +13,6 @@ export async function getServerSideProps(context) {
     }
 }
 
-
 export default function Home(props) {
     const {recommend}=props
     return (
@@ -35,8 +34,6 @@ export default function Home(props) {
                 </div>
 
             </div>
-
-
         </div>
     )
 }

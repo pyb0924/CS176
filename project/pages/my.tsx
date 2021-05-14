@@ -6,7 +6,7 @@ import MySideBar from "../components/MySideBar/MySideBar";
 import MyAlbum from "../components/MyAlbum/MyAlbum";
 import BottomBar from "../components/BottomBar/BottomBar";
 
-export async function getStaticProps(context) {
+export async function getServerSideProps(context) {
     const res = await fetch('http://localhost:3000/my_album.json')
     let album = await res.json()
     album = album.data.cdlist
